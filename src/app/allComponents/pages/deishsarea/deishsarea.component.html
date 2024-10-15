@@ -1,0 +1,19 @@
+<section class="py-20">
+
+    <div class="mx-auto w-10/12 py-16  grid grid-cols-1 md:grid-cols-2 gap-5 gap-y-8  lg:grid-cols-4">
+        @for (item of _areaMeal ; track $index) {
+        <div [routerLink]="['/mealdetils',item.idMeal]"
+            class="card overflow-hidden  py-10 shadow-lg border  bg-slate-100 relative rounded-2xl p-2 ">
+            <div class="-mt-10   ">
+                <img class="img-di w-full rounded-full animate__animated animate__zoomIn" [src]="item.strMealThumb" alt="">
+            </div>
+
+            <div>
+                <h2 class="pt-8 font-extrabold text-2xl">{{item.strMeal}}</h2>
+            </div>
+        </div>
+        }
+
+    </div>
+
+</section>

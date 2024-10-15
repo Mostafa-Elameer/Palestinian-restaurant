@@ -1,0 +1,13 @@
+.card:hover .img-di {
+    animation: fade-in infinite 1.5s ease-in-out;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

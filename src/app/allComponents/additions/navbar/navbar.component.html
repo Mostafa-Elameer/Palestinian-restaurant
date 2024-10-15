@@ -1,0 +1,375 @@
+<header
+    class="flex flex-wrap fixed sm:justify-start sm:flex-nowrap z-50 w-full bg-white shadow-lg   text-sm  sm:py-0 dark:bg-neutral-800">
+    <nav class="max-w-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8 lg:py-2">
+        <div class="relative sm:flex lg:gap-x-12  items-center  px-5">
+
+
+
+            <!-- log -->
+            <div class="flex items-center justify-between">
+                <a routerLink="/home"
+                    class="flex items-center font-semibold text-xl text-black focus:outline-none focus:opacity-80 dark:text-white"
+                    aria-label="Brand">
+                    <img class="w-8 mx-2" src="./../../../../assets/img/meal_icons/colorlogo.svg" alt="">
+                    Palestinian
+                </a>
+                <div class="sm:hidden">
+                    <button type="button"
+                        class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10"
+                        id="hs-navbar-basic-usage-collapse" aria-expanded="false" aria-controls="hs-navbar-basic-usage"
+                        aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-basic-usage">
+
+
+                        <svg class="hs-collapse-open:hidden shrink-0 size-4" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <line x1="3" x2="21" y1="6" y2="6" />
+                            <line x1="3" x2="21" y1="12" y2="12" />
+
+                            <line x1="3" x2="21" y1="18" y2="18" />
+                        </svg>
+
+
+
+                        <svg class="hs-collapse-open:block hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- all dropdwon -->
+            <div id="hs-navbar-basic-usage"
+                class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block "
+                aria-labelledby="hs-navbar-basic-usage-collapse">
+                <div
+                    class="flex flex-col gap-y-3 sm:gap-y-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5 gap-x-14">
+
+
+                    <!-- drobdoun Eat-->
+                    <div
+                        class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover] [--auto-close:false] [--is-collapse:true] sm:[--is-collapse:false] ">
+                        <button id="hs-mega-menu" type="button"
+                            class="hs-dropdown-toggle sm:p-2 flex items-center w-full text-gray-600 font-medium hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+                            aria-haspopup="menu" aria-expanded="false" aria-label="Mega Menu">
+                            <img src="" alt="">
+                            <img class="w-8" src="./assets/img/meal_icons/eat.svg" alt="">
+                            <p class="text-xl px-2">Eat</p>
+                            <svg class="hs-dropdown-open:-rotate-180 sm:hs-dropdown-open:rotate-0 duration-300 ms-2 shrink-0 size-4"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="hs-dropdown-menu transition-[height] sm:transition-[opacity,margin] duration-300 ease-in-out sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-full hidden z-10 sm:mt-3 top-full start-0 min-w-60 bg-white sm:shadow-md rounded-lg py-2 sm:px-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute"
+                            role="menu" aria-orientation="vertical" aria-labelledby="hs-mega-menu">
+                            <div class="sm:grid sm:grid-cols-3">
+                                <div class="flex flex-col">
+                                    <a routerLink="/eatallmeals"
+                                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        <img class="w-7 " src="./assets/img/meal_icons/colorlogo.svg" alt="">
+                                        Full menu </a>
+                                    <a
+                                        class="flex  items-center cursor-pointer  gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        <img class="w-7 " src="./assets/img/meal_icons/basta.png" alt="">
+                                        Pasta
+                                    </a>
+                                    <a
+                                        class="flex items-center cursor-pointer  gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        <img class="w-7 " src="./assets/img/meal_icons/burgeer1.png" alt="">
+                                        Burgger
+                                    </a>
+
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <a
+                                        class="flex items-center cursor-pointer  gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        <img class="w-7 " src="./assets/img/meal_icons/chicken.svg" alt="">
+
+                                        chicken
+                                    </a>
+                                    <a
+                                        class="flex items-center cursor-pointer  gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        <img class="w-7 " src="./assets/img/meal_icons/breakfast.svg" alt="">
+                                        breakfast </a>
+                                    <a
+                                        class="flex items-center cursor-pointer  gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        <img class="w-7 " src="./assets/img/meal_icons/salad.svg" alt="">
+
+                                        salad </a>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <a
+                                        class="flex items-center cursor-pointer  gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        <img class="w-7 " src="./assets/img/meal_icons/dessert.png" alt="">
+
+                                        Desserts
+                                    </a>
+
+                                    <a
+                                        class="flex items-center cursor-pointer  gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        <img class="w-7 " src="./assets/img/meal_icons/drink.svg" alt="">
+                                        take Coffe
+                                    </a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- drobdoun discover -->
+                    <div
+                        class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover] [--auto-close:false] [--is-collapse:true] sm:[--is-collapse:false] ">
+                        <button id="hs-mega-menu" type="button"
+                            class="hs-dropdown-toggle sm:p-2 flex items-center w-full text-gray-600 font-medium hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+                            aria-haspopup="menu" aria-expanded="false" aria-label="Mega Menu">
+                            <p class="text-xl">discover</p> <svg
+                                class="hs-dropdown-open:-rotate-180 sm:hs-dropdown-open:rotate-0 duration-300 ms-2 shrink-0 size-4"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="hs-dropdown-menu transition-[height] sm:transition-[opacity,margin] duration-300 ease-in-out sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-full hidden z-10 sm:mt-3 top-full start-0 min-w-60 bg-white sm:shadow-md rounded-lg py-2 sm:px-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute"
+                            role="menu" aria-orientation="vertical" aria-labelledby="hs-mega-menu">
+                            <div class="flex justify-start items-center">
+                                <img class="w-8" src="./assets/img/counrty/de.png" alt="">
+                                <p class="font-bold">Do you know the Country's Dishes ?</p>
+                                <img class="w-8" src="./assets/img/counrty/de.png" alt="">
+
+
+                            </div>
+                            <div class="sm:grid sm:grid-cols-3">
+                                <div class="flex flex-col">
+                                    <a [routerLink]="['/deishsarea','Egyptian']"
+                                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        <img class="w-8" src="./../../../../assets/img/counrty/egypt.svg" alt="">
+                                        Egyptian
+                                    </a>
+                                    <a [routerLink]="['/deishsarea','British']"
+                                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        <img class="w-8" src="./../../../../assets/img/counrty/britch.jpeg" alt="">
+                                        British
+                                    </a>
+                                    <a [routerLink]="['/deishsarea','American']"
+                                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        <img class="w-8" src="./../../../../assets/img/counrty/states.svg" alt="">
+                                        American </a>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <a [routerLink]="['/deishsarea','Chinese']"
+                                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        <img class="w-8" src="./../../../../assets/img/counrty/chinajpeg.jpeg" alt="">
+
+                                        Chinese
+                                    </a>
+                                    <a [routerLink]="['/deishsarea','French']"
+                                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        <img class="w-8" src="./../../../../assets/img/counrty/france.svg" alt="">
+                                        French
+                                    </a>
+                                    <a [routerLink]="['/deishsarea','Indian']"
+                                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        <img class="w-8" src="./../../../../assets/img/counrty/india.svg" alt="">
+                                        Indian
+                                    </a>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <a [routerLink]="['/deishsarea','Italian']"
+                                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        <img class="w-8" src="./../../../../assets/img/counrty/italy.svg" alt="">
+                                        Italian
+                                    </a>
+                                    <a [routerLink]="['/deishsarea','Russian']"
+                                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        <img class="w-8" src="./../../../../assets/img/counrty/Flag_of_Russia.svg.png"
+                                            alt="">
+
+                                        Russian
+                                    </a>
+                                    <a [routerLink]="['/deishsarea','Spanish']"
+                                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        <img class="w-8" src="./../../../../assets/img/counrty/span.png" alt="">
+
+                                        Spanish
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- drobdoun -->
+                    <div
+                        class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover] [--auto-close:false] [--is-collapse:true] sm:[--is-collapse:false] ">
+                        <button id="hs-mega-menu" type="button"
+                            class="hs-dropdown-toggle sm:p-2 flex items-center w-full text-gray-600 font-medium hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+                            aria-haspopup="menu" aria-expanded="false" aria-label="Mega Menu">
+                            <p class="text-xl">About</p>
+                            <svg class="hs-dropdown-open:-rotate-180 sm:hs-dropdown-open:rotate-0 duration-300 ms-2 shrink-0 size-4"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="hs-dropdown-menu transition-[height] sm:transition-[opacity,margin] duration-300 ease-in-out sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-full hidden z-10 sm:mt-3 top-full start-0 min-w-60 bg-white sm:shadow-md rounded-lg py-2 sm:px-2 dark:bg-neutral-800 sm:dark:border dark:border-neutral-700 dark:divide-neutral-700 before:absolute"
+                            role="menu" aria-orientation="vertical" aria-labelledby="hs-mega-menu">
+                            <div class="sm:grid sm:grid-cols-3">
+                                <div class="flex flex-col">
+                                    <a
+                                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        About
+                                    </a>
+                                    <a
+                                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        Services
+                                    </a>
+                                    <a
+                                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        Customer Story
+                                    </a>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <a
+                                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        Careers
+                                    </a>
+                                    <a
+                                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        Careers: Overview
+                                    </a>
+                                    <a
+                                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        Careers: Apply
+                                    </a>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <a
+                                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        Log In
+                                    </a>
+                                    <a
+                                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
+                                        Sign Up
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- btn side nave -->
+            <div class=" my-2 lg:my-0">
+                <button type="button"
+                    class="relative ms-auto  size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-transparent text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-transparent dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                    aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-header-base-offcanvas"
+                    aria-label="Toggle navigation" data-hs-overlay="#hs-header-base-offcanvas">
+                    <i class="fa-solid fa-bars"></i>
+                    <span class="sr-only">Toggle navigation</span>
+                    <img src="./assets/img/meal_icons/menu.svg" alt=""> </button>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+
+<!--  -->
+
+
+
+<!-- Offcanvas -->
+<div id="hs-header-base-offcanvas"
+    class="hs-overlay hs-overlay-open:translate-x-0 hidden -translate-x-full fixed top-0 start-0 transition-all duration-300 transform h-full max-w-xs w-full z-[80] bg-white border-e dark:bg-neutral-800 dark:border-neutral-700"
+    role="dialog" tabindex="-1" aria-labelledby="hs-header-base-offcanvas-label">
+    <div class="flex justify-between items-center py-3 px-4 border-b dark:border-neutral-700">
+        <h3 id="hs-header-base-offcanvas-label" class="font-bold text-gray-800 dark:text-white">
+            Go with our kichen
+        </h3>
+        <button type="button"
+            class="size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:text-neutral-400 dark:focus:bg-neutral-600"
+            aria-label="Close" data-hs-overlay="#hs-header-base-offcanvas">
+            <span class="sr-only">Close</span>
+            <img class="w-7" src="./assets/img/meal_icons/close.svg" alt="">
+        </button>
+    </div>
+    <div class="p-4">
+
+        <button type="button" (click)="dark()"
+            class="hs-dark-mode-active:hidden block hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+            data-hs-theme-click-value="dark">
+            <span class="group inline-flex shrink-0 justify-center items-center size-9">
+                <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg>
+            </span>
+            dark
+        </button>
+
+        <button type="button"
+            class="hs-dark-mode-active:block hidden hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+            data-hs-theme-click-value="light">
+            <span class="group inline-flex shrink-0 justify-center items-center size-9">
+                <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2"></path>
+                    <path d="M12 20v2"></path>
+                    <path d="m4.93 4.93 1.41 1.41"></path>
+                    <path d="m17.66 17.66 1.41 1.41"></path>
+                    <path d="M2 12h2"></path>
+                    <path d="M20 12h2"></path>
+                    <path d="m6.34 17.66-1.41 1.41"></path>
+                    <path d="m19.07 4.93-1.41 1.41"></path>
+                </svg>
+            </span>
+        </button>
+
+
+        <a class="p-2 flex items-center content-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+            routerLinkActive="bg-gray-100 dark:bg-neutral-700" routerLink="/search">
+            <img class="w-7" src="./assets/img/meal_icons/search.svg" alt="">
+            <p class="px-2"> Search</p>
+        </a>
+
+        <a class="p-2 flex items-center content-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+            routerLinkActive="bg-gray-100 dark:bg-neutral-700" routerLink="/wishlist">
+            <img class="w-7" src="./assets/img/meal_icons/locaition.svg" alt="">
+            <p class="px-2"> wishlist</p>
+        </a>
+        <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+            routerLinkActive="bg-gray-100 dark:bg-neutral-700" routerLink="/delivery">
+            <img class="w-7" src="./assets/img/meal_icons/delivery.svg" alt="">
+            <p class="px-2"> delivery</p>
+        </a>
+        <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+            routerLinkActive="bg-gray-100 dark:bg-neutral-700" routerLink="Offers">
+            <img class="w-7" src="./assets/img/meal_icons/bigsel.svg" alt="">
+            <p class="px-2"> Offers</p>
+        </a>
+
+
+
+
+    </div>
+</div>
+<!-- End Offcanvas -->

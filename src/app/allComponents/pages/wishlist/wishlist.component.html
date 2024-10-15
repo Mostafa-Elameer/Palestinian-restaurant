@@ -1,0 +1,18 @@
+<section class="wishlist py-24 ">
+
+
+    <div class="py-5 ">
+        <p class="font-bold text-[#ff4f00] text-3xl text-center ">Your wishlist</p>
+
+    </div>
+    <div class="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-4">
+
+        @for (item of allmel; track $index) {
+        <img [src]="item.strMealThumb" alt="">
+
+        }
+
+    </div>
+
+
+</section>

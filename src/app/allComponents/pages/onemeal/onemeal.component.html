@@ -1,0 +1,40 @@
+<div class="mx-auto w-10/12 py-16  grid grid-cols-1 md:grid-cols-2 gap-5 gap-y-8  lg:grid-cols-4">
+    @for (item of _allCategories ; track $index) {
+    <div class="card py-10 shadow-lg border  bg-slate-100 relative rounded-2xl p-2 ">
+        <div class="-mt-10 absolute -top-5 ">
+            <img class="w-52 rounded-3xl animate__animated animate__zoomIn" [src]="item.strCategoryThumb" alt="">
+        </div>
+        <div>
+            <h2 class="pt-8 font-extrabold text-2xl">{{item.strCategory}}</h2>
+            <p>{{item.strCategoryDescription.split(" " ,7).join()}}</p>
+            <div class="flex justify-between items-center my-2">
+                <img class="w-8" src="./assets/img/meal_icons/heart.png" alt="">
+                <img class="w-7" src="./assets/img/meal_icons/plus.svg" alt="">
+            </div>
+
+        </div>
+    </div>
+    }
+
+</div>
+
+
+<div class="mx-auto w-10/12 -mt-10  grid grid-cols-1 md:grid-cols-2 gap-5 gap-y-8  lg:grid-cols-4">
+    @for (item of _oneMeal ; track $index) {
+    <div class=" card pt-12 shadow-lg border  bg-slate-100 relative rounded-2xl p-2  ">
+        <div [routerLink]="['/mealdetils',item.idMeal]" class="-mt-10 absolute -top-5 ">
+            <img class="w-32 rounded-3xl animate__animated animate__zoomIn" [src]="item.strMealThumb" alt="">
+        </div>
+        <div>
+            <h2 class="pt-8 font-extrabold text-2xl animate__animated animate__zoomIn">{{item.strMeal.split(" "
+                ,2).join()}}</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, provident!</p>
+            <div class="flex justify-between items-center my-2 ">
+                <img (click)="mealId(item.idMeal)" class="w-8" src="./assets/img/meal_icons/heart.png" alt="">
+                <img class="w-7" src="./assets/img/meal_icons/plus.svg" alt="">
+            </div>
+        </div>
+    </div>
+    }
+
+</div>
